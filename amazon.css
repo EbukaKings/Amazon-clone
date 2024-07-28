@@ -1,3 +1,21 @@
+.header {
+    background-color: black;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.cart-icon-image {
+    height: 30px;
+    width: 40px;
+}
+.cart-text {
+    color: white;
+}
+.amazon-logo-image {
+    height: 30px;
+    width: 60px;
+}
 .container-grid {
     /* background-color: blueviolet; */
     display: grid;
