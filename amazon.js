@@ -1,3 +1,6 @@
+import { cart } from "./cart.js";
+
+
 const products = [{
     image: "images/first-image.png",
     name: "gown1",
@@ -77,7 +80,8 @@ document.querySelectorAll(".js-add-to-cart").forEach(button => {
         document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
         // console.log(cartQuantity)
     })
-}) 
+}); 
+
 
 
 
