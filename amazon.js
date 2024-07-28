@@ -51,8 +51,29 @@ document.querySelector(".container-grid").innerHTML = htmlProducts
 
 document.querySelectorAll(".js-add-to-cart").forEach(button => {
     button.addEventListener("click", () => {
-        console.log(button.dataset.productName) 
+        const productName = button.dataset.productName;
+        // console.log(productName)
+        let matchingItem;
+        cart.forEach((item) => {
+            if(productName === item.productName) {
+                matchingItem = item;
+            }
+        });
+
+        if (matchingItem) {
+            matchingItem.quantity += 1;
+        } else {
+            cart.push({
+                productName: productName,
+                quantity: 1
+            });
+        }
+
+
+        
+        console.log(cart)
     })
 }) 
+
 
 
