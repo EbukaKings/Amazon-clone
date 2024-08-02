@@ -1,27 +1,8 @@
 import { cart } from "./cart.js";
+import { products
+ } from "./products.js";
 
-
-const products = [{
-    image: "images/first-image.png",
-    name: "gown1",
-    price: 20.00,
-
-},{
-    image: "images/second-image.png",
-    name: "gown2",
-    price: 18.00,
-
-},{
-    image: "images/third-image.png",
-    name: "gown3",
-    price: 22.65,
-
-},{
-    image: "images/forth-image.png",
-    name: "gown4",
-    price: 32.80,
-},];
-
+ 
 let htmlProducts = ""
 
 
