@@ -13,105 +13,15 @@
                 <div><img class="Checkout-amazon-image" src="assets/amazon logo.png"></div>
             </a>
             
-            <div class="header-cheekout-text-container"><h1 class="header-cheekout-text">Checkout (0 items)</h1></div>
+            <div class="header-cheekout-text-container"><h1 class="header-cheekout-text js-checkout-quantity">Checkout ()</h1></div>
             <div><img src="images/checkout-lock-icon.png"></div>
         </div>
         <div>
             <h3 class="order-review">Review your order</h3>
         </div>
         <div class="checkout-content">
-            <div class="checkout-products">
-                <div class="checkout-product">
-                    <div>
-                        <h2>Delivery date: Wednesday, July 31</h2>
-                    </div>
-                    <div class="item-payment-container">
-                    <div class="cart-container-item">
-                        <div class="item-details-container">
-                            <div>
-                                <img class="cart-img" src="images/athletic-cotton-socks-6-pairs.jpg">
-                            </div>
-                            <div class="product-info-container">
-                                <div class="product-info-container-description">
-                                    <h4>Black and Gray Athletic Cotton Socks - 6 Pairs</h4>
-                                </div>
-                                <div>
-                                    <p>$10.90</p>
-                                </div>
-                                <div>
-                                    <p>Quantity: 2</p>
-                                    <button>Update</button>
-                                    <button>Delete</button>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                    </div>
-                    <div class="delivery-choice-container">
-                            <div class="delivery-choice-container-description">
-                                <p>Choose a delivery option:</p>
-                                <div>
-                                    <input type="radio" name="choice-delevery-radio">Thursday, August 8 <p>FREE Shipping</p>
-                                </div>
-                                <div>
-                                    <input type="radio" name="choice-delevery-radio">Friday, August 2
-                                    <p>$4.99 - Shipping</p>
-                                </div>
-                                <div>
-                                    <input type="radio" name="choice-delevery-radio">Wednesday, July 31
-                                    <p>$9.99 - Shipping</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="checkout-products js-order-summary">
                 
-                <div class="checkout-product">
-                    <div>
-                        <h2>Delivery date: Wednesday, July 31</h2>
-                    </div>
-                    <div class="item-payment-container">
-                    <div class="cart-container-item">
-                        <div class="item-details-container">
-                            <div>
-                                <img class="cart-img" src="images/athletic-cotton-socks-6-pairs.jpg">
-                            </div>
-                            <div class="product-info-container">
-                                <div class="product-info-container-description">
-                                    <h4>Black and Gray Athletic Cotton Socks - 6 Pairs</h4>
-                                </div>
-                                <div>
-                                    <p>$10.90</p>
-                                </div>
-                                <div>
-                                    <p>Quantity: 2</p>
-                                    <button>Update</button>
-                                    <button>Delete</button>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                    </div>
-                    <div class="delivery-choice-container">
-                            <div class="delivery-choice-container-description">
-                                <p>Choose a delivery option:</p>
-                                <div>
-                                    <input type="radio" name="choice-delevery-radio">Thursday, August 8 <p>FREE Shipping</p>
-                                </div>
-                                <div>
-                                    <input type="radio" name="choice-delevery-radio">Friday, August 2
-                                    <p>$4.99 - Shipping</p>
-                                </div>
-                                <div>
-                                    <input type="radio" name="choice-delevery-radio">Wednesday, July 31
-                                    <p>$9.99 - Shipping</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             
             <div class="payment-container">
@@ -130,7 +40,7 @@
             </div>
         </div>
     </div>
-    
-    <script type="module" src="checkout.js"></script>
+    <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
+    <script type="module" src="scripts/checkout.js"></script>
 </body>
 </html>
