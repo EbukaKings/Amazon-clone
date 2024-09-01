@@ -1,5 +1,6 @@
 import { Cart, removeFromCart } from "../data/cart.js";
 import { products } from "../data/products.js";
+import { deliveryOptions } from "../data/deliveryOptions.js";
 // import { updateCartQuantity } from "./amazon.js";
 
 const today = dayjs();
@@ -70,6 +71,32 @@ Cart.forEach((cartItem) => {
                 </div>
     `
 })
+
+function deliveryOptionHTML() {
+    deliveryOptions.forEach((deliveryOption)=> {
+        const today = dayjs();
+        const deliveryDate = today.add
+        `
+        <div class="delivery-choice-container">
+                            <div class="delivery-choice-container-description">
+                                <p>Choose a delivery option:</p>
+                                <div>
+                                    <input type="radio" name="choice-delevery-radio">Thursday, August 8 <p>FREE Shipping</p>
+                                </div>
+                                <div>
+                                    <input type="radio" name="choice-delevery-radio">Friday, August 2
+                                    <p>$4.99 - Shipping</p>
+                                </div>
+                                <div>
+                                    <input type="radio" name="choice-delevery-radio">Wednesday, July 31
+                                    <p>$9.99 - Shipping</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        `
+    })
+}
 // console.log(cartSummaryHTML)
 document.querySelector(".js-order-summary").innerHTML = cartSummaryHTML;
 
